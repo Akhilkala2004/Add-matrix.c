@@ -3,46 +3,81 @@
 
 void adition(int a[i][j], int b[i][j], int c[i][j]) 
 {
+
   int i, j,m,n;
+
   for (i = 0; i < m; i++) 
-  {
+ 
+ {
+
     for (j = 0; j < n; j++)
+
     {
+
       c[i][j] = a[i][j] + b[i][j];
+
     }
+
   }
+
 }
 
 void printmatrix(int matrix[i][j])
+
  {
+
   int i, j;
+
   for (i = 0; i < m; i++)
+
   {
+
     for (j = 0; j < n; j++)
+
     {
+
       printf("%d ", matrix[i][j]);
+
     }
+
     printf("\n");
+
   }
+
 }
 
-int main() {
+
+int main()
+
+ {
+
   int a[i][j], b[i][j],c[i][j];
   
   printf("Enter how many rows:");
+
   scanf("%d",m);
+
   printf("Enter how many columns:");
+
   scanf("%d",n);
-  printf("Enter %d elements for matrix 'a':".m*n);
+
+  printf("Enter %d elements for matrix'a':".m*n);
+
   for(i=1;i<=m;i++)
+
   {
     for(j=1;j<=n;j++)
+
     {
+
         scanf("%d",&a[i][j]);
+
         printf("%d ",a[i][j]);
 
     }
+
   printf("\n");
+
   }
   printf("Enter how many rows:");
   scanf("%d",m);
